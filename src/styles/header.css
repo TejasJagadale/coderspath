@@ -1,0 +1,191 @@
+.header {
+  background-color: #1e293b;
+  color: white;
+  padding: 5px 7px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed; /* Make header fixed */
+  top: 0; /* Stick to top */
+  left: 0; /* Align to left */
+  right: 0; /* Stretch full width */
+  z-index: 1000; /* Ensure header stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+}
+
+.cplogo {
+  height: 68px;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.nav a:hover {
+  background-color: #34495e;
+}
+
+/* Active link underline */
+.nav a.active {
+  font-weight: bold;
+}
+
+.nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background-color: #3498db;
+}
+
+.search input {
+  padding: 8px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.search button {
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+/* Mobile Toggle Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .cplogo {
+    height: 52px;
+  }
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+    order: 1;
+  }
+
+  .logo {
+    order: 2;
+    margin-right: 10px;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    display: none;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .nav li {
+    margin-bottom: 10;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    display: none;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .nav li {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav a {
+    display: block;
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+    order: 2;
+  }
+
+  .search-toggle {
+    display: none;
+  }
+
+  .search {
+    order: 4;
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+  }
+
+  .search.active {
+    display: flex;
+  }
+}
+
+@media (min-width: 993px) {
+  .nav {
+    display: flex !important;
+  }
+}
