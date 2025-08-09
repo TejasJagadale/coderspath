@@ -7,6 +7,19 @@ const Header = ({ allArticles }) => {
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const location = useLocation();
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4097461626187477";
+    script.async = true;
+    script.crossOrigin = "anonymous";
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     if (!isMenuOpen) {
@@ -42,7 +55,7 @@ const Header = ({ allArticles }) => {
 
   return (
     <header className="header">
-        <img className="cplogo" src="/images/cplogo.png" alt=""></img>
+      <img className="cplogo" src="/images/cplogo.png" alt=""></img>
 
       <button className="menu-toggle" onClick={toggleMenu}>
         {isMenuOpen ? "✕" : "☰"}

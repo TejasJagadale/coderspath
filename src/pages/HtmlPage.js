@@ -1,17 +1,22 @@
 import React from "react";
 import "../styles/article.css";
+import AdSenseAd from "../components/AdSenseAd";
 
 const HtmlPage = () => {
   return (
     <div className="article">
       <h1>HTML: The Foundation of Web Development</h1>
 
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="article-top-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "20px auto",
+          maxWidth: "728px",
+          height: "90px"
+        }}
+      />
 
       <p>
         HTML (HyperText Markup Language) is the standard markup language for
@@ -501,6 +506,17 @@ const HtmlPage = () => {
   userCard.dataset.lastActive = new Date().toISOString();
 </script>`}</pre>
 
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "20px auto",
+          maxWidth: "728px",
+          height: "90px"
+        }}
+      />
+
       <h2>HTML Internationalization (i18n)</h2>
       <p>Prepare your content for multiple languages:</p>
       <pre>{`<!-- Specify language -->
@@ -524,9 +540,9 @@ const HtmlPage = () => {
   <option value="fr">Français</option>
 </select>`}</pre>
 
-<h2>HTML Microdata for Rich Snippets</h2>
-<p>Help search engines understand your content better:</p>
-<pre>{`<div itemscope itemtype="https://schema.org/Person">
+      <h2>HTML Microdata for Rich Snippets</h2>
+      <p>Help search engines understand your content better:</p>
+      <pre>{`<div itemscope itemtype="https://schema.org/Person">
   <h1 itemprop="name">John Doe</h1>
   <p itemprop="jobTitle">Web Developer</p>
   <p>Phone: <span itemprop="telephone">123-456-7890</span></p>
@@ -542,11 +558,11 @@ const HtmlPage = () => {
   </div>
 </div>`}</pre>
 
-<h2>HTML Performance Optimization</h2>
-<p>Techniques to make your HTML load faster:</p>
-<div className="code-example">
-  <div className="code-example-title">Performance Tips</div>
-  <pre>{`<!-- Defer non-critical resources -->
+      <h2>HTML Performance Optimization</h2>
+      <p>Techniques to make your HTML load faster:</p>
+      <div className="code-example">
+        <div className="code-example-title">Performance Tips</div>
+        <pre>{`<!-- Defer non-critical resources -->
 <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
 
 <!-- Lazy load images -->
@@ -569,11 +585,11 @@ const HtmlPage = () => {
 <style>
   /* Critical CSS here */
 </style>`}</pre>
-</div>
+      </div>
 
-<h2>HTML for Email Development</h2>
-<p>Special considerations for HTML emails:</p>
-<pre>{`<!-- Use table-based layouts -->
+      <h2>HTML for Email Development</h2>
+      <p>Special considerations for HTML emails:</p>
+      <pre>{`<!-- Use table-based layouts -->
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td align="center">

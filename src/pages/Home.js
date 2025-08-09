@@ -1,6 +1,7 @@
 import React from "react";
 import ArticleCard from "../components/ArticleCard";
 import "../styles/article.css";
+import AdSenseAd from "../components/AdSenseAd";
 
 const Home = () => {
   const featuredArticles = [
@@ -43,14 +44,17 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="ad-container">
-        <p>Advertisement</p>
-        {/* AdSense code will go here */}
-        <div id="top-ad">
-          {/* This is where your AdSense ad will be displayed */}
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
+      {/* Top Ad - Leaderboard */}
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "20px auto",
+          maxWidth: "728px",
+          height: "90px"
+        }}
+      />
 
       <section className="featured-content">
         <h2>Featured Tutorials</h2>
@@ -60,6 +64,17 @@ const Home = () => {
           ))}
         </div>
       </section>
+
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
 
       <section className="categories">
         <h2>Browse by Category</h2>
@@ -103,14 +118,16 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="ad-container">
-        <p>Advertisement</p>
-        {/* AdSense code will go here */}
-        <div id="bottom-ad">
-          {/* This is where your AdSense ad will be displayed */}
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "20px auto",
+          maxWidth: "728px",
+          height: "90px"
+        }}
+      />
     </div>
   );
 };
