@@ -1,31 +1,33 @@
-import React from 'react';
-import '../styles/article.css';
+import React from "react";
+import "../styles/article.css";
+import AdSenseAd from "../components/AdSenseAd";
 
 const JavaScriptPage = () => {
   return (
     <div className="article">
       <h1>JavaScript: The Language of the Web</h1>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="js-top-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
-      
-      <p>JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is the core technology of the web, enabling interactive web pages and is used by 98% of all websites.</p>
-      
+
+      <p>
+        JavaScript is a high-level, interpreted programming language that
+        conforms to the ECMAScript specification. It is the core technology of
+        the web, enabling interactive web pages and is used by 98% of all
+        websites.
+      </p>
+
       <h2>JavaScript History</h2>
-      <p>JavaScript was created by Brendan Eich in 1995 while working at Netscape. Key milestones:</p>
+      <p>
+        JavaScript was created by Brendan Eich in 1995 while working at
+        Netscape. Key milestones:
+      </p>
       <ul>
         <li>1997: ECMAScript 1 (First standardized version)</li>
         <li>2009: ES5 (Major enhancements)</li>
         <li>2015: ES6/ES2015 (Biggest update with classes, modules, etc.)</li>
         <li>Annual updates since 2015 (ES2016, ES2017, etc.)</li>
       </ul>
-      
+
       <h2>Basic Syntax</h2>
-      
+
       <div className="code-example">
         <div className="code-example-title">Variables and Data Types</div>
         <pre>{`// Variables
@@ -43,7 +45,18 @@ let notDefined;         // Undefined
 // Typeof operator
 console.log(typeof name); // "string"`}</pre>
       </div>
-      
+
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
+
       <div className="code-example">
         <div className="code-example-title">Operators</div>
         <pre>{`// Arithmetic
@@ -62,9 +75,9 @@ console.log(!true);          // false (NOT)
 // Ternary
 let status = (age >= 18) ? 'Adult' : 'Minor';`}</pre>
       </div>
-      
+
       <h2>Control Structures</h2>
-      
+
       <div className="code-example">
         <div className="code-example-title">Conditionals</div>
         <pre>{`// If-else
@@ -87,7 +100,7 @@ switch (new Date().getDay()) {
     day = "Unknown";
 }`}</pre>
       </div>
-      
+
       <div className="code-example">
         <div className="code-example-title">Loops</div>
         <pre>{`// For loop
@@ -112,16 +125,20 @@ for (const key in person) {
   console.log(key, person[key]);
 }`}</pre>
       </div>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="js-middle-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
-      
+
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
+
       <h2>Functions</h2>
-      
+
       <div className="code-example">
         <div className="code-example-title">Function Types</div>
         <pre>{`// Function declaration
@@ -149,9 +166,9 @@ function sum(...numbers) {
   return numbers.reduce((a, b) => a + b);
 }`}</pre>
       </div>
-      
+
       <h2>Arrays</h2>
-      
+
       <div className="code-example">
         <div className="code-example-title">Array Methods</div>
         <pre>{`const numbers = [1, 2, 3, 4, 5];
@@ -175,9 +192,9 @@ const allPositive = numbers.every(n => n > 0);
 // Sort
 const sorted = numbers.sort((a, b) => a - b);`}</pre>
       </div>
-      
+
       <h2>Objects</h2>
-      
+
       <div className="code-example">
         <div className="code-example-title">Object Features</div>
         <pre>{`// Object creation
@@ -211,17 +228,24 @@ class Person {
   }
 }`}</pre>
       </div>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="js-middle-ad-2">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
-      
+
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
+
       <h2>DOM Manipulation</h2>
-      <p>The Document Object Model (DOM) is a programming interface for web documents.</p>
-      
+      <p>
+        The Document Object Model (DOM) is a programming interface for web
+        documents.
+      </p>
+
       <div className="code-example">
         <div className="code-example-title">DOM Methods</div>
         <pre>{`// Selecting elements
@@ -250,9 +274,9 @@ form.addEventListener('submit', (e) => {
   const data = new FormData(form);
 });`}</pre>
       </div>
-      
+
       <h2>Asynchronous JavaScript</h2>
-      
+
       <div className="code-example">
         <div className="code-example-title">Callbacks</div>
         <pre>{`function fetchData(callback) {
@@ -265,7 +289,7 @@ fetchData((data) => {
   console.log(data);
 });`}</pre>
       </div>
-      
+
       <div className="code-example">
         <div className="code-example-title">Promises</div>
         <pre>{`const promise = new Promise((resolve, reject) => {
@@ -279,7 +303,7 @@ promise
   .then(data => console.log(data))
   .catch(error => console.error(error));`}</pre>
       </div>
-      
+
       <div className="code-example">
         <div className="code-example-title">Async/Await</div>
         <pre>{`async function fetchData() {
@@ -294,9 +318,9 @@ promise
 
 fetchData();`}</pre>
       </div>
-      
+
       <h2>Modern JavaScript (ES6+)</h2>
-      
+
       <div className="code-example">
         <div className="code-example-title">ES6+ Features</div>
         <pre>{`// Template literals
@@ -326,9 +350,9 @@ const street = user?.address?.street;
 // Nullish coalescing
 const value = input ?? 'default';`}</pre>
       </div>
-      
+
       <h2>Error Handling</h2>
-      
+
       <div className="code-example">
         <div className="code-example-title">Try/Catch</div>
         <pre>{`try {
@@ -340,30 +364,50 @@ const value = input ?? 'default';`}</pre>
   console.log('This always runs');
 }`}</pre>
       </div>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="js-bottom-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
-      
+
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
+
       <h2>JavaScript Best Practices</h2>
       <ol>
-        <li>Use <code>const</code> by default, <code>let</code> when rebinding is needed</li>
+        <li>
+          Use <code>const</code> by default, <code>let</code> when rebinding is
+          needed
+        </li>
         <li>Always declare variables before use</li>
-        <li>Use strict equality (<code>===</code>) instead of loose equality (<code>==</code>)</li>
+        <li>
+          Use strict equality (<code>===</code>) instead of loose equality (
+          <code>==</code>)
+        </li>
         <li>Use template literals for string concatenation</li>
-        <li>Follow consistent naming conventions (camelCase for variables/functions)</li>
+        <li>
+          Follow consistent naming conventions (camelCase for
+          variables/functions)
+        </li>
         <li>Always handle errors and rejected promises</li>
         <li>Avoid global variables when possible</li>
         <li>Use arrow functions for concise callbacks</li>
         <li>Modularize code into smaller functions</li>
         <li>Keep functions pure when possible (no side effects)</li>
       </ol>
-      
+
       <h2>Conclusion</h2>
-      <p>JavaScript is a versatile language that powers the modern web. From simple DOM manipulations to complex single-page applications, JavaScript continues to evolve with new features and capabilities. Mastering JavaScript fundamentals is essential for any web developer, and understanding modern ES6+ features will make you more productive and write cleaner code.</p>
+      <p>
+        JavaScript is a versatile language that powers the modern web. From
+        simple DOM manipulations to complex single-page applications, JavaScript
+        continues to evolve with new features and capabilities. Mastering
+        JavaScript fundamentals is essential for any web developer, and
+        understanding modern ES6+ features will make you more productive and
+        write cleaner code.
+      </p>
     </div>
   );
 };

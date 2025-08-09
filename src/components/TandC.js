@@ -1,7 +1,7 @@
 import React from "react";
 const mail = "tejasjagadale25@gmail.com";
 const siteName = "YourWebsite";
-const siteUrl = "yourwebsite.com";
+const siteUrl = "CodersPath";
 const lastUpdated = new Date().toLocaleDateString();
 const TandC = () => {
   return (

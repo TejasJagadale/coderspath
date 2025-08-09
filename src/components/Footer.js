@@ -92,9 +92,9 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} CodersPath. All Rights Reserved.</p>
         <div className="legal-links">
-          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/privacy-policy">Privacy Policy &#8599;</a>
           <span>|</span>
-          <a href="/termsandconditions">Terms of Service</a>
+          <a href="/termsandconditions">Terms of Service &#8599;</a>
         </div>
       </div>
     </footer>

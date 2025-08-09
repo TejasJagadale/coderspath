@@ -44,18 +44,6 @@ const Home = () => {
         </p>
       </div>
 
-      {/* Top Ad - Leaderboard */}
-      <AdSenseAd
-        adSlot="7952094241"
-        adFormat="auto"
-        adStyle={{
-          display: "block",
-          margin: "20px auto",
-          maxWidth: "728px",
-          height: "90px"
-        }}
-      />
-
       <section className="featured-content">
         <h2>Featured Tutorials</h2>
         <div className="article-grid">

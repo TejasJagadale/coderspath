@@ -1,20 +1,17 @@
-import React from 'react';
-import '../styles/article.css';
+import React from "react";
+import "../styles/article.css";
+import AdSenseAd from "../components/AdSenseAd";
 
 const CssGrid = () => {
   return (
     <div className="article">
       <h1>Mastering CSS Grid</h1>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="css-grid-top-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
-      
-      <p>CSS Grid Layout is a powerful two-dimensional layout system that revolutionized web design. Let's explore its full potential.</p>
-      
+
+      <p>
+        CSS Grid Layout is a powerful two-dimensional layout system that
+        revolutionized web design. Let's explore its full potential.
+      </p>
+
       <h2>Basic Grid Structure</h2>
       <pre>{`.container {
   display: grid;
@@ -22,7 +19,7 @@ const CssGrid = () => {
   grid-template-rows: auto;
   gap: 20px;
 }`}</pre>
-      
+
       <h2>Grid Template Areas</h2>
       <pre>{`.container {
   display: grid;
@@ -36,14 +33,25 @@ const CssGrid = () => {
 .sidebar { grid-area: sidebar; }
 .content { grid-area: content; }
 .footer { grid-area: footer; }`}</pre>
-      
+
       <div className="ad-container">
         <p>Advertisement</p>
         <div id="css-grid-middle-ad">
           <p>AdSense Ad Placeholder</p>
         </div>
       </div>
-      
+
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
+
       <h2>Responsive Grid Patterns</h2>
       <pre>{`/* Mobile first */
 .container {
@@ -58,7 +66,7 @@ const CssGrid = () => {
     gap: 20px;
   }
 }`}</pre>
-      
+
       <h2>Advanced Techniques</h2>
       <p>Masonry layout with grid:</p>
       <pre>{`.container {
@@ -70,13 +78,17 @@ const CssGrid = () => {
 .item {
   grid-row-end: span 20; /* How many rows each item spans */
 }`}</pre>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="css-grid-bottom-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
+
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
     </div>
   );
 };

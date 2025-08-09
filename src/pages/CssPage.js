@@ -1,17 +1,11 @@
 import React from "react";
 import "../styles/article.css";
+import AdSenseAd from "../components/AdSenseAd";
 
 const CssPage = () => {
   return (
     <div className="article">
       <h1>CSS: Styling the Web</h1>
-
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="css-top-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
 
       <p>
         Cascading Style Sheets (CSS) is a stylesheet language used to describe
@@ -48,6 +42,17 @@ const CssPage = () => {
           styling
         </li>
       </ol>
+
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
 
       <h2>CSS Syntax</h2>
       <p>
@@ -158,12 +163,16 @@ p::selection {
       </ul>
       <p>The universal selector (*) has no specificity value.</p>
 
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="css-middle-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
 
       <h2>CSS Box Model</h2>
       <p>
@@ -278,12 +287,16 @@ span {
 }`}</pre>
       </div>
 
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="css-middle-ad-2">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
 
       <h2>CSS Flexbox Layout</h2>
       <p>
@@ -379,12 +392,16 @@ span {
 }`}</pre>
       </div>
 
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="css-bottom-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
 
       <h2>Responsive Design</h2>
       <p>
@@ -545,12 +562,12 @@ span {
       </>
 
       <>
-  <h2>CSS Filters</h2>
-  <p>Filters provide visual effects like blurring or color shifting:</p>
-  
-  <div className="code-example">
-    <div className="code-example-title">Filter Examples</div>
-    <pre>{`/* Blur */
+        <h2>CSS Filters</h2>
+        <p>Filters provide visual effects like blurring or color shifting:</p>
+
+        <div className="code-example">
+          <div className="code-example-title">Filter Examples</div>
+          <pre>{`/* Blur */
 .blur {
   filter: blur(5px);
 }
@@ -579,16 +596,18 @@ span {
 .shadow {
   filter: drop-shadow(8px 8px 10px gray);
 }`}</pre>
-  </div>
-</>
+        </div>
+      </>
 
-<>
-  <h2>Advanced CSS Variables</h2>
-  <p>CSS variables offer powerful theming and dynamic styling capabilities:</p>
-  
-  <div className="code-example">
-    <div className="code-example-title">Advanced Variable Usage</div>
-    <pre>{`/* Theme switching */
+      <>
+        <h2>Advanced CSS Variables</h2>
+        <p>
+          CSS variables offer powerful theming and dynamic styling capabilities:
+        </p>
+
+        <div className="code-example">
+          <div className="code-example-title">Advanced Variable Usage</div>
+          <pre>{`/* Theme switching */
 :root {
   --primary: #4285f4;
   --secondary: #34a853;
@@ -622,16 +641,16 @@ document.documentElement.style.setProperty('--primary', newColor);
   --alert-bg: #fff3cd;
   background: var(--alert-bg);
 }`}</pre>
-  </div>
-</>
+        </div>
+      </>
 
-<>
-  <h2>CSS Blend Modes</h2>
-  <p>Blend modes control how elements blend with their background:</p>
-  
-  <div className="code-example">
-    <div className="code-example-title">Blend Mode Examples</div>
-    <pre>{`/* Background blend modes */
+      <>
+        <h2>CSS Blend Modes</h2>
+        <p>Blend modes control how elements blend with their background:</p>
+
+        <div className="code-example">
+          <div className="code-example-title">Blend Mode Examples</div>
+          <pre>{`/* Background blend modes */
 .hero {
   background-image: url(image.jpg), linear-gradient(red, yellow);
   background-blend-mode: multiply;
@@ -655,16 +674,16 @@ document.documentElement.style.setProperty('--primary', newColor);
 .isolated {
   isolation: isolate; /* Creates new stacking context */
 }`}</pre>
-  </div>
-</>
+        </div>
+      </>
 
-<>
-  <h2>CSS Scroll Snap</h2>
-  <p>Create controlled scroll experiences with scroll snapping:</p>
-  
-  <div className="code-example">
-    <div className="code-example-title">Scroll Snap Examples</div>
-    <pre>{`/* Container */
+      <>
+        <h2>CSS Scroll Snap</h2>
+        <p>Create controlled scroll experiences with scroll snapping:</p>
+
+        <div className="code-example">
+          <div className="code-example-title">Scroll Snap Examples</div>
+          <pre>{`/* Container */
 .scroll-container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -698,16 +717,16 @@ document.documentElement.style.setProperty('--primary', newColor);
 .item {
   scroll-snap-padding: 20px;
 }`}</pre>
-  </div>
-</>
+        </div>
+      </>
 
-<>
-  <h2>CSS Logical Properties</h2>
-  <p>Write direction-agnostic CSS for better internationalization:</p>
-  
-  <div className="code-example">
-    <div className="code-example-title">Logical Properties Examples</div>
-    <pre>{`/* Direction-independent spacing */
+      <>
+        <h2>CSS Logical Properties</h2>
+        <p>Write direction-agnostic CSS for better internationalization:</p>
+
+        <div className="code-example">
+          <div className="code-example-title">Logical Properties Examples</div>
+          <pre>{`/* Direction-independent spacing */
 .text {
   margin-inline-start: 1rem; /* Left in LTR, right in RTL */
   padding-block-end: 2rem; /* Bottom in horizontal writing modes */
@@ -733,8 +752,8 @@ document.documentElement.style.setProperty('--primary', newColor);
 .image {
   float: inline-start; /* left in LTR, right in RTL */
 }`}</pre>
-  </div>
-</>
+        </div>
+      </>
 
       <h2>Conclusion</h2>
       <p>

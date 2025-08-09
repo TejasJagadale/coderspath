@@ -6,13 +6,6 @@ const About = () => {
     <div className="article">
       <h1>About CodersPath</h1>
       
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="about-top-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
-      
       <p>Welcome to CodersPath, your premier destination for comprehensive coding tutorials and programming resources. Our mission is to make coding accessible to everyone, from beginners to experienced developers looking to expand their skills.</p>
       
       <h2>Our Story</h2>
@@ -26,13 +19,6 @@ const About = () => {
         <li><strong>Beginner-friendly</strong> explanations of complex concepts</li>
         <li><strong>Free resources</strong> available to everyone</li>
       </ul>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="about-middle-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
       
       <h2>Our Team</h2>
       <p>CodersPath is run by a team of passionate developers and educators who believe in the power of sharing knowledge. Our team includes:</p>
@@ -63,13 +49,6 @@ const About = () => {
         <li><strong>Community:</strong> Fostering a supportive learning environment</li>
         <li><strong>Innovation:</strong> Staying ahead of technology trends</li>
       </ul>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="about-bottom-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
     </div>
   );
 };

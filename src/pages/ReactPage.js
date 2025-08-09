@@ -1,17 +1,11 @@
 import React from "react";
 import "../styles/article.css";
+import AdSenseAd from "../components/AdSenseAd";
 
 const ReactPage = () => {
   return (
     <div className="article">
       <h1>React: A JavaScript Library for Building User Interfaces</h1>
-
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="react-top-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
 
       <section>
         <p>
@@ -45,6 +39,17 @@ const ReactPage = () => {
           </li>
         </ul>
       </section>
+
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
 
       <section>
         <h2>Getting Started</h2>
@@ -112,12 +117,16 @@ root.render(myElement);`}</pre>
 ReactDOM.render(element, document.getElementById('root'));`}</pre>
       </section>
 
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="react-middle-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
 
       <section>
         <h2>React Hooks</h2>
@@ -247,12 +256,16 @@ Student.propTypes = {
         </p>
       </section>
 
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="react-middle-ad-2">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
 
       <section>
         <h2>React Forms</h2>
@@ -376,12 +389,16 @@ function Component3() {
 }`}</pre>
       </section>
 
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="react-bottom-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
 
       <section>
         <h2>React Best Practices</h2>

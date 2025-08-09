@@ -6,12 +6,6 @@ const Contact = () => {
     <div className="article">
       <h1>Contact Us</h1>
 
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="contact-top-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
 
       <p>
         Have questions, suggestions, or feedback? We'd love to hear from you!
@@ -51,13 +45,6 @@ const Contact = () => {
             </a>
           </div>
           <p className="contactp1">DM us for quick responses</p>
-        </div>
-      </div>
-
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="contact-bottom-ad">
-          <p>AdSense Ad Placeholder</p>
         </div>
       </div>
     </div>

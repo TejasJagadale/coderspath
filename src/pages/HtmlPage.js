@@ -7,17 +7,6 @@ const HtmlPage = () => {
     <div className="article">
       <h1>HTML: The Foundation of Web Development</h1>
 
-      <AdSenseAd
-        adSlot="7952094241"
-        adFormat="auto"
-        adStyle={{
-          display: "block",
-          margin: "20px auto",
-          maxWidth: "728px",
-          height: "90px"
-        }}
-      />
-
       <p>
         HTML (HyperText Markup Language) is the standard markup language for
         creating web pages and web applications. It provides the structure of a
@@ -36,6 +25,17 @@ const HtmlPage = () => {
         <li>XHTML (2000)</li>
         <li>HTML5 (2014 - current)</li>
       </ul>
+
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "20px auto",
+          maxWidth: "728px",
+          height: "90px"
+        }}
+      />
 
       <h2>Basic HTML Document Structure</h2>
       <p>
@@ -453,7 +453,7 @@ const HtmlPage = () => {
 <meta property="og:title" content="Your Page Title">
 <meta property="og:description" content="Description for social sharing">
 <meta property="og:image" content="image.jpg">
-<meta property="og:url" content="https://yourwebsite.com/page">
+<meta property="og:url" content="https://CodersPath/page">
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">

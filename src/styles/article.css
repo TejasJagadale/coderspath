@@ -81,11 +81,17 @@ code {
 .hero {
   text-align: center;
   padding: 4rem 0;
-  background: linear-gradient(135deg, #1e293b, #603fab);
+  background: linear-gradient(
+      135deg,
+      rgba(30, 41, 59, 0.723)
+    ),
+    url("../../public/images/tech-bg.jpg") center/cover no-repeat;
   color: white;
   border-radius: 12px;
   margin: 2rem 0;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
 }
 
 .hero h1 {

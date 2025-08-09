@@ -1,22 +1,20 @@
-import React from 'react';
-import '../styles/article.css';
+import React from "react";
+import "../styles/article.css";
+import AdSenseAd from "../components/AdSenseAd";
 
 const PythonPage = () => {
   return (
     <div className="article">
       <h1>Python: A Versatile Programming Language</h1>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="python-top-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
-      
-      <p>Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace.</p>
-      
+
+      <p>
+        Python is an interpreted, high-level and general-purpose programming
+        language. Python's design philosophy emphasizes code readability with
+        its notable use of significant whitespace.
+      </p>
+
       <h2>Basic Syntax</h2>
-      
+
       <div className="code-example">
         <div className="code-example-title">Variables and Data Types</div>
         <pre>{`# Variables
@@ -30,7 +28,7 @@ fruits = ["apple", "banana", "cherry"]
 # Dictionaries
 person = {"name": "John", "age": 25}`}</pre>
       </div>
-      
+
       <div className="code-example">
         <div className="code-example-title">Functions</div>
         <pre>{`# Function definition
@@ -40,9 +38,9 @@ def greet(name):
 # Function call
 print(greet("John"))`}</pre>
       </div>
-      
+
       <h2>Control Structures</h2>
-      
+
       <pre>{`# If-else
 if age >= 18:
     print("Adult")
@@ -58,16 +56,9 @@ count = 0
 while count < 5:
     print(count)
     count += 1`}</pre>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="python-middle-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
-      
+
       <h2>Object-Oriented Programming</h2>
-      
+
       <pre>{`class Person:
     def __init__(self, name, age):
         self.name = name
@@ -79,9 +70,9 @@ while count < 5:
 # Create object
 person = Person("John", 30)
 print(person.greet())`}</pre>
-      
+
       <h2>Popular Python Frameworks</h2>
-      
+
       <div className="code-example">
         <div className="code-example-title">Django (Web Framework)</div>
         <pre>{`# views.py
@@ -90,7 +81,7 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse("Hello, world!")`}</pre>
       </div>
-      
+
       <div className="code-example">
         <div className="code-example-title">Flask (Micro Web Framework)</div>
         <pre>{`from flask import Flask
@@ -100,7 +91,7 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'`}</pre>
       </div>
-      
+
       <div className="code-example">
         <div className="code-example-title">Pandas (Data Analysis)</div>
         <pre>{`import pandas as pd
@@ -112,13 +103,17 @@ df = pd.DataFrame(data)
 # Display DataFrame
 print(df)`}</pre>
       </div>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="python-bottom-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
+
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
     </div>
   );
 };

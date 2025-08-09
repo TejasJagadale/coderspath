@@ -2,7 +2,7 @@ import React from "react";
 
 export default function LegalPages({
   siteName = "YourWebsite",
-  siteUrl = "yourwebsite.com",
+  siteUrl = "CodersPath",
   contactEmail = "tejasjagadale25@gmail.com"
 }) {
   const lastUpdated = new Date().toLocaleDateString();

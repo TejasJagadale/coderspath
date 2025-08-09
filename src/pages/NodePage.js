@@ -1,22 +1,20 @@
-import React from 'react';
-import '../styles/article.css';
+import React from "react";
+import "../styles/article.css";
+import AdSenseAd from "../components/AdSenseAd";
 
 const NodePage = () => {
   return (
     <div className="article">
       <h1>Node.js: JavaScript Runtime Environment</h1>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="node-top-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
-      
-      <p>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.</p>
-      
+
+      <p>
+        Node.js is an open-source, cross-platform, back-end JavaScript runtime
+        environment that runs on the V8 engine and executes JavaScript code
+        outside a web browser.
+      </p>
+
       <h2>Core Modules</h2>
-      
+
       <div className="code-example">
         <div className="code-example-title">HTTP Module</div>
         <pre>{`const http = require('http');
@@ -31,7 +29,7 @@ server.listen(3000, () => {
   console.log('Server running on port 3000');
 });`}</pre>
       </div>
-      
+
       <div className="code-example">
         <div className="code-example-title">File System Module</div>
         <pre>{`const fs = require('fs');
@@ -41,17 +39,13 @@ fs.readFile('file.txt', 'utf8', (err, data) => {
   console.log(data);
 });`}</pre>
       </div>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="node-middle-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
-      
+
       <h2>Express.js Framework</h2>
-      <p>Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.</p>
-      
+      <p>
+        Express is a minimal and flexible Node.js web application framework that
+        provides a robust set of features for web and mobile applications.
+      </p>
+
       <pre>{`const express = require('express');
 const app = express();
 
@@ -62,9 +56,9 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
   console.log('Example app listening on port 3000!');
 });`}</pre>
-      
+
       <h2>Working with Databases</h2>
-      
+
       <div className="code-example">
         <div className="code-example-title">MongoDB with Mongoose</div>
         <pre>{`const mongoose = require('mongoose');
@@ -85,9 +79,9 @@ const User = mongoose.model('User', userSchema);
 const user = new User({ name: 'John', age: 30 });
 user.save().then(() => console.log('User saved'));`}</pre>
       </div>
-      
+
       <h2>REST API Development</h2>
-      
+
       <pre>{`const express = require('express');
 const app = express();
 
@@ -113,13 +107,17 @@ app.post('/users', (req, res) => {
 });
 
 app.listen(3000, () => console.log('Server started'));`}</pre>
-      
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div id="node-bottom-ad">
-          <p>AdSense Ad Placeholder</p>
-        </div>
-      </div>
+
+      <AdSenseAd
+        adSlot="7952094241"
+        adFormat="auto"
+        adStyle={{
+          display: "block",
+          margin: "30px auto",
+          maxWidth: "336px",
+          height: "280px"
+        }}
+      />
     </div>
   );
 };
